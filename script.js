@@ -9,7 +9,7 @@ function fetchLeetCodeData() {
   document.getElementById("stats").style.display = "none";
   document.getElementById("problems-container").style.display = "none";
 
-  fetch(`http://127.0.0.1:5000/leetcode?username=${username}`)
+  fetch(`http:///check-3-ten.vercel.app/leetcode?username=${username}`)
     .then((res) => res.json())
     .then((data) => {
       document.getElementById("loading").style.display = "none";
@@ -54,3 +54,4 @@ function fetchLeetCodeData() {
       document.getElementById("stats").style.display = "block";
     });
 }
+
